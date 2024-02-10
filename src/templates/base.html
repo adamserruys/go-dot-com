@@ -1,0 +1,50 @@
+{{define "base"}}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>{{template "title" .}} - Adam Robert Serruys</title>
+    <link rel="stylesheet" type="text/css" href="/styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;750&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header_container">
+        <div class="header_link_container">
+          <a class="header_link" href="/">
+            <h1 class="header">Adam Robert Serruys</h1>
+            <h3 class="sub_header"><em>Software Developer and Music Nerd</em></h3>
+          </a>
+          <input class="header_nav_checkbox" type="checkbox" />
+          <div class="hamburger_lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>         
+        </div> 
+        <ul class="header_nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/music">Music</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>{{template "main" .}}</main>
+    <footer>
+      <h4 class="contact_me">Contact Me:</h4>
+      <ul class="footer_links">
+        <li><a href="https://www.linkedin.com/in/adamserruys/">LinkedIn</a></li>
+        <li><a href="mailto:adam.r.serruys@gmail.com">Email</a></li>
+      </ul>
+
+      </div>
+    </footer>
+  </body>
+</html>
+{{end}}
